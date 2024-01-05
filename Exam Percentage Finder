@@ -1,0 +1,88 @@
+Console.WriteLine("-------->EXAMINATION MARKS TESTOR<--------");
+Console.WriteLine("       ------->BY BIOZFROG<-------\n");
+
+Console.WriteLine("\nEnter 1st Subject");
+string s1 = Console.ReadLine();
+
+Console.WriteLine("\nEnter 2nd Subject");
+string s2 = Console.ReadLine();
+
+Console.WriteLine("\nEnter 3rd Subject");
+string s3 = Console.ReadLine();
+
+Console.WriteLine("Enter 4th Subject");
+string s4 = Console.ReadLine();
+
+Console.WriteLine("\nEnter 5th Subject");
+string s5 = Console.ReadLine();
+
+Console.WriteLine("\nEnter 6th Subject");
+string s6 = Console.ReadLine();
+
+Console.WriteLine("\nEnter 7th Subject");
+string s7 = Console.ReadLine();
+
+Console.WriteLine("\nEnter 8th Subject");
+string s8 = Console.ReadLine();
+
+Console.WriteLine($"\nEnter your {s1} Marks: ");
+double Physics = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter {s1} Total Marks: ");
+double TotalPhysics = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter your {s2} Marks: ");
+double Mathematics = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter {s2} Total Marks: ");
+double TotalMathematics = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter your {s3} Marks: ");
+double Urdu = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter {s3} Total Marks: ");
+double TotalUrdu = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter your {s4} Marks: ");
+double Chemistry = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter {s4} Total Marks: ");
+double TotalChemistry = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter your {s5} Marks: ");
+double English = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter {s5} Total Marks: ");
+double TotalEnglish = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter your {s6} Marks: ");
+double PakStudies = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter {s6} Total Marks: ");
+double TotalPakStudies = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter your {s7} Marks: ");
+double Islamiat = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter {s7} Total Marks: ");
+double TotalIslamiat = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter your {s8} Marks: ");
+double ICT = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine($"\nEnter {s8} Total Marks: ");
+double TotalICT = Convert.ToDouble(Console.ReadLine());
+
+double totalMarks = TotalPhysics + TotalMathematics + TotalUrdu + TotalChemistry + TotalEnglish + TotalPakStudies + TotalIslamiat + TotalICT;
+double Percent = (Physics + Mathematics + Urdu + Chemistry + English + PakStudies + Islamiat + ICT) / totalMarks * 100;
+
+Console.Write("\nYou totally got {0:F1}%", Percent);
+
+if(Percent >= 70)
+{
+    Console.Write(". You Passed = >\n");
+}
+else
+{
+    Console.Write(". You Failed =<\n");
+}
