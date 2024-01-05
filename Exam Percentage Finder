@@ -34,7 +34,7 @@ double TotalPhysics = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine($"\nEnter your {s2} Marks Obtained: ");
 double Mathematics = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine($"\nEnter Total Marks of {s2} Total Marks: ");
+Console.WriteLine($"\nEnter Total Marks of {s2}: ");
 double TotalMathematics = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine($"\nEnter your {s3} Marks Obtained: ");
@@ -46,7 +46,7 @@ double TotalUrdu = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine($"\nEnter your {s4} Marks Obtained: ");
 double Chemistry = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine($"\nEnter  Total Marks of {s4}: ");
+Console.WriteLine($"\nEnter Total Marks of {s4}: ");
 double TotalChemistry = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine($"\nEnter your {s5} Marks Obtained: ");
