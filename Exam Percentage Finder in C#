@@ -1,6 +1,7 @@
 Console.WriteLine("-------->EXAMINATION MARKS TESTOR<--------");
 Console.WriteLine("       ------->BY BIOZFROG<-------\n");
 
+// Grabbing the subjects name in Variables
 Console.WriteLine("\nEnter 1st Subject");
 string s1 = Console.ReadLine();
 
@@ -25,6 +26,7 @@ string s7 = Console.ReadLine();
 Console.WriteLine("\nEnter 8th Subject");
 string s8 = Console.ReadLine();
 
+//Accessing subjects Obtained and Total marks
 Console.WriteLine($"\nEnter your {s1} Marks Obtained: ");
 double Physics = Convert.ToDouble(Console.ReadLine());
 
@@ -73,11 +75,12 @@ double ICT = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine($"\nEnter  Total Marks of {s8}: ");
 double TotalICT = Convert.ToDouble(Console.ReadLine());
 
+// Making the percentage of all Subjects and printing
 double totalMarks = TotalPhysics + TotalMathematics + TotalUrdu + TotalChemistry + TotalEnglish + TotalPakStudies + TotalIslamiat + TotalICT;
 double Percent = (Physics + Mathematics + Urdu + Chemistry + English + PakStudies + Islamiat + ICT) / totalMarks * 100;
-
 Console.Write("\nYou totally got {0:F1}%", Percent);
 
+// Checking if the student passed or not
 if(Percent >= 70)
 {
     Console.Write(". You Passed = >\n");
